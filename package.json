@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "build": "gridsome build"
+  },
+  "dependencies": {
+    "@gridsome/source-graphql": "^0.1.0",
+    "axios": "^0.24.0",
+    "gridsome": "^0.7.23",
+    "gridsome-plugin-uikit": "^1.0.0",
+    "moment": "^2.29.1",
+    "vue-share-buttons": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-plugin-gridsome": "^1.6.2",
+    "vue-eslint-parser": "^7.9.0"
+  }
+}
