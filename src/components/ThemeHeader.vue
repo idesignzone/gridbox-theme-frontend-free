@@ -7,9 +7,9 @@
               <div class="uk-navbar-left">
                   <g-link to="/" class="uk-navbar-item uk-logo uk-padding-remove">
 
-                      <img data-uk-img v-if="$static.WordPress.siteLogo.mediaItemUrl" :src="$static.WordPress.siteLogo.mediaItemUrl" 
+                      <!-- <img data-uk-img v-if="$static.WordPress.siteLogo.mediaItemUrl" :src="$static.WordPress.siteLogo.mediaItemUrl" 
                       width="auto"
-                      :alt="$static.WordPress.allSettings.generalSettingsTitle" />
+                      :alt="$static.WordPress.allSettings.generalSettingsTitle" /> -->
                       <span v-if="$static.WordPress.allSettings.generalSettingsTitle" v-html="$static.WordPress.allSettings.generalSettingsTitle"></span>
                   </g-link>
 
@@ -98,6 +98,7 @@
 <static-query>
     query {
       WordPress {
+
         posts(first: 3) {
           edges {
             node {
@@ -145,9 +146,6 @@
         }
         allSettings {
           generalSettingsTitle
-        }
-        siteLogo {
-          mediaItemUrl
         }
       }
     }

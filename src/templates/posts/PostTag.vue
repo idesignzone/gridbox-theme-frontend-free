@@ -103,8 +103,7 @@ export default {
     return {
       title: this.$page.WordPress.tag.name,
       htmlAttrs: {
-        lang: this.$page.WordPress.generalSettings.language,
-        dir: this.$page.WordPress.gridboxOptions.themeOptions.general.languageDirection
+        lang: this.$page.WordPress.generalSettings.language
       }
     }
   }
