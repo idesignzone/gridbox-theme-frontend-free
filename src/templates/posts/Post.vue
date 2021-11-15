@@ -81,14 +81,6 @@
 
                       <!-- Social Share -->
                       <ul class="uk-margin-medium-top uk-flex uk-flex-between uk-flex-middle uk-flex-wrap">
-                          <li class="uk-margin-small-top">
-                              <div class="uk-flex uk-flex-middle">
-                                  <h5 class="uk-margin-medium-right uk-margin-remove-bottom">Social Share</h5>
-                                  <ClientOnly>
-                                      <SocialShare></SocialShare>
-                                  </ClientOnly>
-                              </div>
-                          </li>
 
                           <li class="uk-margin-small-top uk-text-meta">
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" class="uk-margin-small-right uk-margin-small-left">
@@ -98,7 +90,6 @@
                               <span v-else>No comments</span>
                           </li>
 
-                          
                       </ul>
 
                   </div>
@@ -336,7 +327,6 @@ query ($id: ID!) {
 <script>
 import FormatedDate from "~/components/posts/FormatedDate";
 import BadgeDate from "~/components/posts/BadgeDate";
-import SocialShare from "~/components/posts/SocialShare";
 import Sidebar from "~/components/sidebars/BlogSidebar";
 import axios from "axios"
 
@@ -351,7 +341,6 @@ export default {
   components: { 
     FormatedDate, 
     BadgeDate, 
-    SocialShare, 
     Sidebar
   },
   methods: {
